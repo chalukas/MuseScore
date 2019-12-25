@@ -1,0 +1,60 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MuseProbe</title>
+    <meta name="description" content="Enter the name of your favorite spotify track to find its melody, among other properties">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">Let's Break it Down</h1>
+      <p class="lead">Enter the name of your favorite spotify track to find its melody, among other properties.</p>
+      <hr class="my-4">
+      <p>Let's search for a track:</p>
+      <p class="lead">
+        <form>
+        <input class="search" type="text" maxlength="100" placeholder="Track Name">
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </p>
+    </div>
+
+    <main>
+      <h4></h4>
+      
+      <section class="features">
+        <ul id="results">
+        </ul>
+        <p id="key"></p>
+        <p id="tempo"></p>
+        <p id="time_sign"></p>
+        <div id="features-chart-container">
+          <canvas id="features-chart" width="400" height="200"></canvas>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Made by jo
+      </p>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
