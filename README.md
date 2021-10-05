@@ -1,7 +1,7 @@
-museprobe - CalHacks 6.0
+musescore - CalHacks 6.0
 =========================
 
-museprobe provides aspiring composers and producers with an instantaneous report of a song's musical components, including its tonality, leading pitches, and more.
+musescore provides aspiring composers and producers with an instantaneous report of a song's musical components, including its tonality, leading pitches, and more.
 
 See the app live [here](https://museprobe.glitch.me)
 
